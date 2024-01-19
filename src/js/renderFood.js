@@ -4,10 +4,10 @@ import {
   isExistInCart,
   removeFromStorageCart,
 } from './localStorage.js';
-import '../../node_modules/slim-select/dist/slimselect.css';
+// import '../../node_modules/slim-select/dist/slimselect.css';
 import { disableScroll, openModal } from './modal_window';
 import svg from '../img/icons.svg';
-import SlimSelect from 'slim-select';
+// import SlimSelect from 'slim-select';
 import { handleCartItem, qty_card_products } from './header.js';
 
 const list = document.querySelector('.list-product');

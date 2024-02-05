@@ -1,11 +1,12 @@
 @media only screen and (min-width: 1440px) {
-    .product-content-section{
+    .product-content-section {
         display: flex;
         max-width: 1240px;
         margin: 0 auto;
         justify-content: space-between;
     }
-    .item-product{
+
+    .item-product {
         display: block !important;
         justify-content: start !important;
     }
@@ -20,10 +21,11 @@
     margin: 0 auto;
     align-content: flex-start;
 }
+
 @media only screen and (min-width: 1024px) {
-    .list-product{
+    .list-product {
         width: 925px;
-  }
+    }
 }
 
 .item-product {
@@ -36,20 +38,20 @@
 }
 
 .item-product:hover {
-  -webkit-box-shadow: 7px 6px 8px -1px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 7px 6px 8px -1px rgba(34, 60, 80, 0.2);
-  box-shadow: 7px 6px 8px -1px rgba(34, 60, 80, 0.2);
-  transition: box-shadow 0.3s ease-in-out;
-  transition: scale 0.5s ease-in-out;
-  scale: 1.02;
+    -webkit-box-shadow: 7px 6px 8px -1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 7px 6px 8px -1px rgba(34, 60, 80, 0.2);
+    box-shadow: 7px 6px 8px -1px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: scale 0.5s ease-in-out;
+    scale: 1.02;
 }
 
-.product-container{
+.product-container {
     padding: 20px;
     position: relative;
 }
 
-.features-container{
+.features-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -57,7 +59,7 @@
     width: 216px;
 }
 
-.feature{
+.feature {
     color: rgba(1, 1, 1, 0.30);
     font-family: Neue Montreal Regular;
     font-size: 12px;
@@ -67,7 +69,7 @@
     margin-right: 8px;
 }
 
-.feature-black{
+.feature-black {
     color: #010101;
     font-family: Neue Montreal Regular;
     font-size: 12px;
@@ -104,13 +106,13 @@
     margin-top: 10px;
 }
 
-.sell-container{
+.sell-container {
     height: 34px;
     display: flex;
     justify-content: space-between;
 }
 
-.svg-container{
+.svg-container {
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -119,17 +121,18 @@
     transition: background-color 300ms cubic-bezier(0.3, 0.1, 0.2, 0.3);
     cursor: pointer;
 }
-.svg-container:hover{
+
+.svg-container:hover {
     background-color: var(--dark_green);
 }
 
-.svg{
+.svg {
     padding-top: 2px;
     fill: var(--gray);
     transition: transform 1s cubic-bezier(0.3, 0.1, 0.2, 0.3);
 }
 
-.discount-svg{
+.discount-svg {
     position: absolute;
     z-index: 999;
     top: 5px;
@@ -138,17 +141,17 @@
 
 
 @media screen and (max-width: 769px) {
-.item-product {
-  width: 335px;
-}
+    .item-product {
+        width: 335px;
+    }
 
-  .img-product {
-    width: 295px;
-    height: 178px;
-  }
+    .img-product {
+        width: 295px;
+        height: 178px;
+    }
 
-  .features-container {
-    width: 295px;
-  }
+    .features-container {
+        width: 295px;
+    }
 
 }

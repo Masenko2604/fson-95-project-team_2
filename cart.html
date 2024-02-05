@@ -9,8 +9,8 @@
 	<title>Cart</title>
   <script type="module" crossorigin src="/santa-sleigh-team-2/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/santa-sleigh-team-2/assets/vendor-b592f4c5.js">
-  <link rel="modulepreload" crossorigin href="/santa-sleigh-team-2/assets/pagination-ec1abefd.js">
-  <link rel="stylesheet" href="/santa-sleigh-team-2/assets/pagination-f67b0b01.css">
+  <link rel="modulepreload" crossorigin href="/santa-sleigh-team-2/assets/pagination-df36ae5e.js">
+  <link rel="stylesheet" href="/santa-sleigh-team-2/assets/pagination-a74270e1.css">
   <link rel="stylesheet" href="/santa-sleigh-team-2/assets/vendor-a0b14d8a.css">
   <link rel="stylesheet" href="/santa-sleigh-team-2/assets/cart-017bc3ea.css">
 </head>
@@ -272,31 +272,28 @@
     <form class="form-search">
         <p class="filter">Filters:</p>
         <div class="cont-input-search">
-        <input placeholder="Search for anything" class="input-search" type="text" name="search">
-        <button class="submit" type="submit">
-            <svg width="20" height="20">
-                <use href="/santa-sleigh-team-2/assets/icons-b3cb9da3.svg#icon-search" multiple></use>
-            </svg>
-        </button>
-    </div>
+            <input placeholder="Search for anything" class="input-search" type="text" name="search">
+            <button class="submit" type="submit">
+                <svg width="20" height="20">
+                    <use href="/santa-sleigh-team-2/assets/icons-b3cb9da3.svg#icon-search" multiple></use>
+                </svg>
+            </button>
+        </div>
         <select name="selecteds" id="selected" class="selected">
             <option value="" disabled>Categories</option>
-          <option value="">Show all</option>
+            <option value="">Show all</option>
         </select>
-       </form>
-       <div class="error">
+    </form>
+    <div class="error">
         <h3 class="errors">Nothing was found for the selected
             <span class="text-error">filters...</span>
         </h3>
         <p class="text-error-false">
-            Try adjusting your search parameters or browse our range by other criteria to find the perfect product for you.
+            Try adjusting your search parameters or browse our range by other criteria to find the perfect product for
+            you.
         </p>
     </div>
 </section>
-
-
-
-
     <section class="product-content-section">
       <ul class="list-product"></ul>
       <div id="pagination" class="tui-pagination"></div>

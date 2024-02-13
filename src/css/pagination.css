@@ -39,9 +39,9 @@
 
 
 @media screen and (min-width: 1440px) {
-#pagination {
-  position: absolute;
-  bottom: -138px;
-  right: 600px;
-}
+  #pagination {
+    position: absolute;
+    bottom: -138px;
+    right: 600px;
+  }
 }

@@ -1,216 +1,93 @@
-@import url('./styles.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./filters.css');
+@import url('./products_list.css');
+@import url('./popular_products.css');
+@import url('./discount_products.css');
+@import url('./footer.css');
+@import url('./pagination.css');
+@import url('./modal_window.css');
+@import url('./reset.css');
 
-.filter {
-    color: rgba(1, 1, 1, 0.30);
-    font-family: Neue Montreal;
-    font-size: 14px;
-    line-height: 0.2px;
-    margin-right: 260px;
-}
+:root {
+    --white: #FAFAFA;
+    --gray: #E8E8E2;
+    --dark_green: #586F1F;
+    --light_green: #6D8434;
+    --black: #010101;
+    --gray_oppacity: rgba(1, 1, 1, 0.30);
 
-.form-search {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    margin-top: 20px;
-    margin-bottom: 80px;
-}
-
-.cont-input-search {
-    position: absolute;
-    margin-top: 20px;
-}
-
-.input-search {
-    display: flex;
-    min-width: 220px;    
-    padding: 14px 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 159px;
-    background-color: transparent;
-    border-radius: 30px;
-    border: 1px solid rgba(1, 1, 1, 0.30);
-}
-
-.input-search::placeholder {
-    color: #010101;
-    font-family: Neue Montreal;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-}
-
-.submit {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    background-color: transparent;
-    border: transparent;
-}
-
-/* #selected {
-        position: relative; 
-        display: flex;
-        margin-top: 10px;
-        top: 60px;  
-        width: 280px;
-        padding: 14px 20px;
-        justify-content: center;
-        align-items: center;
-        gap: 209px;
-        border-radius: 30px;
-        background-color: transparent;
-        border: 1px solid rgba(1, 1, 1, 0.30);
-    } */
-
-.error {
-    flex-direction: column;
-    align-items: center;
-}
-
-.text-error-false {
-    width: 279px;
-    color: rgba(1, 1, 1, 0.70);
-    text-align: center;
-    font-family: Neue Montreal;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-}
-
-.text-error {
-    color: #6D8434;
-    font-family: Neue Montreal;
+    font-family: Neue Montreal Medium;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
+    line-height: 24px;
+
+    background-color: var(--gray);
 }
 
-.errors {
-    width: 261px;
-    color: #010101;
-    text-align: center;
-    font-family: Neue Montreal;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
+/*
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
-.ss-main {
-    color: #010101 !important;
-    font-family: Neue Montreal !important;
-    font-size: 14px !important;
-    line-height: 18px !important;
-    max-width: 240px !important;
-    position: relative !important;
-    display: flex !important;
-    flex-direction: row !important;
-    margin-top: 10px !important;
-    top: 60px !important;
-    padding: 4px 20px !important;
-    justify-content: center !important;
-    align-items: center !important;
-    border-radius: 30px !important;
-    background-color: transparent !important;
-    border: 1px solid rgba(1, 1, 1, 0.30) !important;
-    box-sizing: content-box !important;
+@media only screen and (min-width: 768px) {
+  .container {
+      max-width: 768px;
+      padding: 0 32px;
+  }
 }
 
-@media (min-width: 768px) {
-    .filter {
-        margin-right: 680px;
-    }
+@media only screen and (min-width: 1440px) {
+  .container {
+      max-width: 1440px;
+      padding: 0 100px;
+  }
+}*/
 
-    .cont-input-search {
-        margin-right: 420px;
-    }
-
-    .input-search {
-        width: 227px;
-        gap: 60px;
-    }
-
-    .form-search {
-        margin-left: 32px;
-        padding: 0 32px;
-    }
-
-    /* #selected {
-    position: sticky;
-    gap: 44px;
-    width: 189px;
-    top: 0%;
-    margin-left: 60px;
-        } */
-    .ss-main {
-        height: 36px !important;
-        position: sticky !important;
-        gap: 44px !important;
-        width: 189px !important;
-        top: 0% !important;
-        margin-left: 110px !important;
-    }
-
-    .errors {
-        font-size: 20px;
-        line-height: 24px;
-    }
-
-    .text-error {
-        font-size: 20px;
-        line-height: 24px;
-    }
-
-    .text-error-false {
-        font-size: 18px;
-        line-height: 24px;
-    }
-
+@font-face {
+    font-family: Neue Montreal Light;
+    src: url("../font/NeueMontreal-Light.otf") format("opentype");
 }
 
-@media (min-width: 1240px) {
-    .filter {
-        margin-right: 770px;
-    }
-
-    .cont-input-search {
-        margin-right: 532px;
-    }
-
-    /* #selected {
-            margin-right: 110px;
-        } */
-
-    .ss-main {
-        margin-left: 8px !important;
-    }
+@font-face {
+    font-family: Neue Montreal Regular;
+    src: url("../font/NeueMontreal-Regular.otf") format("opentype");
 }
 
-@media (min-width: 1440px) {
-    .filter {
-        margin-right: 1300px;
-    }
+@font-face {
+    font-family: Neue Montreal Medium;
+    src: url("../font/NeueMontreal-Medium.otf") format("opentype");
+}
 
-    .cont-input-search {
-        margin-right: 1060px;
-    }
+@font-face {
+    font-family: Neue Montreal Bold;
+    src: url("../font/NeueMontreal-Bold.otf") format("opentype");
+}
 
-    .form-search {
-        margin-left: 100px;
-        padding: 0 15px;
-    }
+@font-face {
+    font-family: FONTSPRING DEMO Regular;
+    src: url("../font/Fontspring-DEMO-quincycf-regular.otf") format("opentype");
+}
 
-    /* #selected {
-            margin-right: 640px;
-                } */
-    .ss-main {
-        margin-right: 538px !important;
-    }
+@font-face {
+    font-family: FONTSPRING DEMO Black;
+    src: url("../font/Fontspring-DEMO-quincycf-black.otf") format("opentype");
+}
+
+/* transition: *argument* 300ms cubic-bezier(0.3, 0.1, 0.2, 0.3); - standart animation delay for project  */
+
+
+.event-click {
+    display: flex;
+    margin: 0 auto;
+}
+
+.icon-cart-test {
+    transition: transform 300ms cubic-bezier(0.3, 0.1, 0.2, 0.3);
+}
+
+.stroke_mark {
+    stroke: red;
 }

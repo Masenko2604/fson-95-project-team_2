@@ -37,7 +37,6 @@
     line-height: 80px;
     letter-spacing: -1.6px;
   }
-
   @media screen and (min-width: 768px) and (max-width: 1240px) {
     max-width: 658px;
   }
@@ -95,7 +94,6 @@
     right: 10px;
     top: -30px;
   }
-
   @media screen and (min-width: 1241px) {
     right: 20px;
     top: -50px;

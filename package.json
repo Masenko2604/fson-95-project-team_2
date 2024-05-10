@@ -1,11 +1,11 @@
 {
-  "name": "santa-sleigh-team-2",
+  "name": "fson-95-project-team_2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/santa-sleigh-team-2/",
+    "build": "vite build --base=/fson-95-project-team_2/",
     "preview": "vite preview"
   },
   "devDependencies": {

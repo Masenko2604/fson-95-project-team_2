@@ -29,14 +29,14 @@ All product data comes from the
 
 ## Technologies
 
-| | |
-| --- | --- |
-| Markup and styles | HTML5, CSS3, BEM, modern-normalize |
-| Logic | JavaScript (ES6+), modules |
-| Build | Vite, vite-plugin-html-inject (HTML partials) |
-| Libraries | Axios, tui-pagination, slim-select |
-| Data | REST API, localStorage |
-| Deploy | GitHub Actions, GitHub Pages |
+|                   |                                               |
+| ----------------- | --------------------------------------------- |
+| Markup and styles | HTML5, CSS3, BEM, modern-normalize            |
+| Logic             | JavaScript (ES6+), modules                    |
+| Build             | Vite, vite-plugin-html-inject (HTML partials) |
+| Libraries         | Axios, tui-pagination, slim-select            |
+| Data              | REST API, localStorage                        |
+| Deploy            | GitHub Actions, GitHub Pages                  |
 
 ## Project structure
 
@@ -69,17 +69,33 @@ The project was made by a team of developers working with Git Flow:
 each feature in its own branch, merged into `main` through pull requests
 with code review.
 
-| Developer | GitHub |
-| --- | --- |
-| Tatiana Masenko | [@Masenko2604](https://github.com/Masenko2604) |
-| | [@Ficefi](https://github.com/Ficefi) |
-| | [@blavikensbutcher](https://github.com/blavikensbutcher) |
-| | [@Bohdana1958](https://github.com/Bohdana1958) |
-| | [@KateDro](https://github.com/KateDro) |
-| | [@MrRoik](https://github.com/MrRoik) |
-| | [@Yaroslav-Zozulya](https://github.com/Yaroslav-Zozulya) |
-| | [@VOvaWAsp](https://github.com/VOvaWAsp) |
-| | [@lilshudd](https://github.com/lilshudd) |
+| Developer       | GitHub                                                   | Contribution |
+| --------------- | -------------------------------------------------------- | ------------ |
+| Tatiana Masenko | [@Masenko2604](https://github.com/Masenko2604)           | Pagination   |
+|                 | [@Ficefi](https://github.com/Ficefi)                     |              |
+|                 | [@blavikensbutcher](https://github.com/blavikensbutcher) |              |
+|                 | [@Bohdana1958](https://github.com/Bohdana1958)           |              |
+|                 | [@KateDro](https://github.com/KateDro)                   |              |
+|                 | [@MrRoik](https://github.com/MrRoik)                     |              |
+|                 | [@Yaroslav-Zozulya](https://github.com/Yaroslav-Zozulya) |              |
+|                 | [@VOvaWAsp](https://github.com/VOvaWAsp)                 |              |
+|                 | [@lilshudd](https://github.com/lilshudd)                 |              |
+
+### My part — pagination
+
+I developed the **pagination** for the product catalog
+(`src/js/pagination.js`, `src/css/pagination.css`, `src/partials/pagination.html`):
+
+- built on the **tui-pagination** library with custom HTML templates for the
+  page buttons and arrows (first / previous / next / last)
+- **adaptive**: the number of products per page depends on the screen width
+  (6 on mobile, 8 on tablet, 9 on desktop), and the number of visible page
+  buttons changes too (2 on mobile, 4 on larger screens)
+- when the user changes the page, new products are loaded from the API and
+  rendered without reloading the page
+- the pagination is rebuilt when filters change, starting again from page 1
+- custom styles in the project design: round buttons, the active page is
+  highlighted in green, inactive arrows are dimmed
 
 ---
 
@@ -93,3 +109,8 @@ with code review.
 
 Технологии: HTML, CSS, JavaScript, Vite, Axios, tui-pagination, slim-select,
 REST API, GitHub Pages.
+
+**Моя часть — пагинация каталога:** библиотека tui-pagination с собственными
+шаблонами кнопок, адаптивное количество товаров на странице (6 / 8 / 9) и
+видимых кнопок (2 / 4), загрузка товаров из API при переключении страниц,
+сброс на первую страницу при смене фильтров, стили в дизайне проекта.
